@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import reducer from './reducers/index'
+import App from './routes/App'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// const memes = async function(){
+//   const call = await fetch('https://api.imgflip.com/get_memes')
+//   const data = await call.json()
+//   return [data.data.memes]
+// }
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const memeGallery = {}
+
+const store = createStore(reducer, memeGallery)
+
+ReactDOM.render(
+  <Provider store={store} >
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
