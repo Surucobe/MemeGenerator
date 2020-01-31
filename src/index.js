@@ -16,8 +16,8 @@ const memeGallery = {}
 const store = createStore(reducer, memeGallery)
 
 ReactDOM.render(
-  <Provider store={store} >
-    <App />
-  </Provider>,
+  // <Provider store={store} >
+  // </Provider>,
+    <App />,
   document.getElementById('root')
 );
