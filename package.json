@@ -1,6 +1,6 @@
 {
   "name": "meme_generator",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "4.2.4",
@@ -54,7 +54,7 @@
     "webpack-cli": "3.3.10",
     "webpack-dev-server": "3.10.2"
   },
-  "description": "",
+  "description": "project build with React, React Router and Redux to show off my skills and learn more",
   "main": "index.js",
   "repository": {
     "type": "git",
