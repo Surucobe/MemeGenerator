@@ -5,6 +5,7 @@ const reducer = (state, action) =>{
       // .then(response => response.json())
       // .then(data => data.data.memes)
       return{
+        //...state,
         // memes: data
       }
     default:
