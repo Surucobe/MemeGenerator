@@ -13,14 +13,15 @@ import App from './routes/App'
 // }
 
 const memeGallery = {
-  "memes": []
+  "memes": [],
+  "editing":{},
 }
 
 const store = createStore(reducer, memeGallery)
 
 ReactDOM.render(
-  // <Provider store={store} >
-  // </Provider>
-  <App />,
+  <Provider store={store} >
+    <App />
+  </Provider>,
   document.getElementById('root')
 );

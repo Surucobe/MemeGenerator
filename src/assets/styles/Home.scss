@@ -1,3 +1,11 @@
+.Loader-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 .gallery-container{
   width: 100%;
   margin: 0;
@@ -22,7 +30,6 @@
   margin: 10px 0;
   scroll-behavior: smooth;
   width: 60%;
-  border: 1px solid #000;
 }
 .Gallery-Assambled::-webkit-scrollbar{
   display: none;
@@ -30,7 +37,7 @@
 
 .Banner{
   width: 10em;
-  background-image: url();
+  background-image: url('https://cdnio.luscious.net/829/lusciousnet_pole_dance_1734517565.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }

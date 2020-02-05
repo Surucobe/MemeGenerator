@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import '../assets/styles/NewMeme.scss'
+import '../assets/styles/MakeMeme.scss'
 
     //   const data = await fetch(`https://api.imgflip.com/get_memes`)
     //   const obj = data.json()

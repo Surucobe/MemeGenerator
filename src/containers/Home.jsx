@@ -2,6 +2,7 @@ import React from 'react'
 import hookState from '../hooks/hooksState'
 
 import MemeCard from '../Components/MemeCard'
+import Loader from '../Components/Loader'
 
 import '../assets/styles/Home.scss'
 
@@ -17,7 +18,9 @@ return(
         <div className="Banner"></div>
         <div className="Gallery-Assambled">
           { memeSource.length === 0 ?
-          <h1>Loading...</h1> :
+          <div className="Loader-container">
+            <Loader /> 
+          </div> :
           <ul className="meme-lister">
             {memeSource.map( meme => 
               <MemeCard 
