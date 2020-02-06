@@ -1,12 +1,9 @@
 const reducer = (state, action) =>{
   switch(action.type){
-    case 'CALL_API':
-      // fetch('https://api.imgflip.com/get_memes')
-      // .then(response => response.json())
-      // .then(data => data.data.memes)
+    case 'SET_EDIT':
       return{
-        //...state,
-        // memes: data
+        ...state,
+        editing: {...action.payload}
       }
     default:
       return state

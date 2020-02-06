@@ -1,4 +1,4 @@
-export const callApi = payload =>({
-  type: 'CALL_API',
+export const setEdit = payload =>({
+  type: 'SET_EDIT',
   payload,
 })
