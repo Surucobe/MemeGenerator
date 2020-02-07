@@ -1,14 +1,14 @@
 import React from 'react'
 
 import Hero from '../Components/Hero'
-import Footer from '../Components/Footer'
+
+import '../assets/styles/Layout.scss'
 
 const Layout = (props) =>(
-  <>
+  <div className="Layout">
     <Hero />
       { props.children }
-    <Footer />
-  </>
+  </div>
 )
 
 export default Layout

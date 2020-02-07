@@ -5,11 +5,11 @@ import { connect } from 'react-redux'
 import { setEdit } from '../actions/index'
 
 const MemeCard = (props) =>{
-  const { url, name } = props
+  const { url, name, box_count } = props
   const handleSetEdit = () => {
     props.setEdit(
       {
-        url, name
+        url, name, box_count
       }
     )
   }
@@ -20,7 +20,8 @@ const MemeCard = (props) =>{
         <img className="Meme-Card"
           src={url} 
           alt={name}
-	  onClick={handleSetEdit}
+	        onClick={handleSetEdit}
+          line-set={box_count}
         />
       </Link>
     </li>

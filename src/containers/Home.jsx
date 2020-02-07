@@ -5,6 +5,7 @@ import MemeCard from '../Components/MemeCard'
 import Loader from '../Components/Loader'
 
 import '../assets/styles/Home.scss'
+import Footer from '../Components/Footer'
 
 const API = 'https://api.imgflip.com/get_memes'
 
@@ -34,6 +35,7 @@ return(
         <div className="Banner"></div>
       </div>
     </div>
+    <Footer />
   </div>
 )}
 

@@ -4,9 +4,21 @@
   justify-content: center;
 }
 
+.meme-editing{
+  width: 482px;
+  min-height: 381px;
+  max-height: 467px;
+
+  border: 1px solid #000;
+}
+
 .back-button{
   color: black;
   width: 4.5em;
   margin-left: 8px;
   margin-top: 8px;
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
 }
