@@ -5,7 +5,8 @@ import { connect } from 'react-redux'
 import { setEdit } from '../actions/index'
 
 const MemeCard = (props) =>{
-  const { url, name, box_count } = props
+  const { url, name, box_count, id } = props
+  
   const handleSetEdit = () => {
     props.setEdit(
       {
@@ -16,7 +17,7 @@ const MemeCard = (props) =>{
 
   return(
     <li>
-      <Link className="Actual-Meme" to={`MakeMeme`}>
+      <Link className="Actual-Meme" to={`/MakeMeme:${id}`}>
         <img className="Meme-Card"
           src={url} 
           alt={name}
